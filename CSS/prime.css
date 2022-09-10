@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-size: 14px;
+}
+.flex-containe{
+    display: flex;
+    width: 100%;
+}
+
+#topo{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: #eee;
+}
+
+#topo a>img{
+    width: 300px
+}
+
+.imagem{
+    width: 100%;
+    height: auto;
+}
+nav{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+}
+.menu{
+    display:  inline-flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu li{
+    position: relative;
+    padding: 10%;
+}
+.menu li a{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none
+
+}
+.menu li a:nover{
+    color: #000;
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: crimson;
+    padding: 5%;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu li ul li{
+    display: block;
+    width: 170px
+}
+#conteudo{
+    min-height: 800px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+#conteudo hl{
+    text-align: center;
+    padding: 2% 5%;
+}
+#conreudo p, ol, hx, img{
+    padding: 2% 5%;
+}
+#rodape{
+    justify-content: center;
+    text-align: center;
+    background-color: darkblue;
+    color: #ddd;
+    height: 80px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
